@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <span class="head"><div class="logo"><h3>Logo</h3></div><div class="menu">
+        <a href="index.html">Home</a>  &nbsp; &nbsp; &nbsp;<a href="adress.html">Adress</a>&nbsp; &nbsp; &nbsp;<a href="projects.html">
+            Projects</a>&nbsp; &nbsp; &nbsp;<a href="contact.html">Contact me</a></div></span>
+   <h1 class="tittle">CONTACT ME!</h1> <h3 class="kwibaraguza">If you want to hire me or give a remark, please don't hesitate your self  write for me!</h3>
+<div class="content">
+    <div class="one">
+        <h2 id="title">Contact Information</h2>
+        <h3 id="live">Say something to start a live chart</h3>
+        <table>
+           <tr> 
+           <td><img src="phone.png" alt="" id="phone"></td>
+           <td class="txt">(+250)780719647</td>
+        </tr>
+           <tr> 
+            <td> <img src="gmail.png" alt="" id="gmail"></td>
+           <td class="txt">ephasteniyonizeye@gmail.com</td>
+        </tr>
+           <tr> 
+            <td><img src="location.jpg" alt="" id="location"></td>
+           <td class="txt">Kigali, Rwanda</td>
+        </tr>
+        </table>
+    </div>
+    <div class="two">
+        
+        <table>
+            <tr>
+                <td class="input"><label>Fname:</label> <br> <input type="text" id="fname"></td>
+                <td class="input"><label>Lname:</label> <br> <input type="text"id="lname"></td>
+        </tr>
+            <tr>
+                <td class="input"><label>Email:</label> <br> <input type="email" id="email"></td>
+                <td class="input"><label>Phone:</label> <br> <input type="text" id="phone_num"></td>
+        </tr>
+        </table>
+        <h3 class="subject">Select the subject</h3>
+        <div id="subject"> 
+            <input type="radio">  Web development&nbsp; &nbsp;
+            <input type="radio">  Web development&nbsp; &nbsp;
+            <input type="radio">  Web development&nbsp; &nbsp;
+        </div>
+        <p class="send"><button class="send">SEND MESSSAGE</button>
+        </p>
+        
+    
+    </div>
+    <script>
+
+    function ValidateEmail(email) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+            return true;
+        }
+        alert("You have entered an invalid email address!");
+        return false;
+    }
+
+    function validateForm() {
+        var fname = document.getElementById('fname');
+        var lname = document.getElementById('lname');
+        var email = document.getElementById('email');
+        var phone = document.getElementById('phone_num');
+
+        if (fname.value === "" || lname.value === "" || email.value === "" || phone.value === "") {
+            alert("Please fill in all the required fields.");
+            return false;
+        }
+
+        return true;
+    }
+
+    // Attach the validation functions to the form's submit button
+    var sendButton = document.querySelector('.send');
+    sendButton.addEventListener('click', function (event) {
+        if (!validateForm() || !ValidateEmail(document.getElementById('email'))) {
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    });
+
+    </script>
+</body>
+</html>

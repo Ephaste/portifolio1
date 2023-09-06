@@ -1,0 +1,156 @@
+/* Default styles for all devices */
+body {
+    background-color: #F5F5F5;
+}
+
+.holder {
+    width: 100%;
+    max-width: 1400px;
+    height: 680px;
+    background-color: #232121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Unvisited link */
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+/* Visited link */
+a:visited {
+    color: green;
+}
+
+/* Mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* Selected link */
+a:active {
+    color: blue;
+}
+
+.holder2 {
+    width: 100%;
+    max-width: 1350px;
+    height: 500px;
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.head {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.logo {
+    font-family: Papyrus, Courier New;
+    font-weight: 400;
+}
+
+.menu {
+    margin-left: auto; /* Adjust this for responsive navigation */
+    font-size: medium;
+    font-weight: 300;
+    padding-bottom: 4px;
+}
+
+.one #pic {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    margin-left: 60px;
+    border-radius: 100px;
+}
+
+#bar {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 40px;
+}
+
+.txt {
+    margin-left: 70px;
+    color: #958B8B;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.rating {
+    margin-left: 50px;
+    display: flex;
+}
+
+.rating img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+#one, #two, #three, #four, #five {
+    /* Define styles for these elements */
+}
+
+.rating text {
+    font-size: 32px;
+    /* Define font and color */
+}
+
+.percent {
+    padding-left: 100px;
+    font-size: 28px;
+    color: #113C70;
+    font-family: arial;
+}
+
+.two {
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.name {
+    padding-right: 30px;
+    color: #000000;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+label {
+    color: #958B8B;
+    font-size: 18px;
+}
+
+.format {
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 768px) {
+    .holder {
+        height: auto;
+    }
+    
+    .holder2 {
+        height: auto;
+    }
+    
+    .menu {
+        margin-left: 0;
+    }
+    
+    /* Define other responsive styles as needed */
+}

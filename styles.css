@@ -1,0 +1,210 @@
+/* Default styles that apply to all devices */
+body {
+    margin: auto;
+    background-color: white;
+    margin-right: 120px;
+    margin-left: 300px;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+}
+
+/* Unvisited link */
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+/* Visited link */
+a:visited {
+    color: green;
+}
+
+/* Mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* Selected link */
+a:active {
+    color: blue;
+}
+
+/* Head */
+.head {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.logo {
+    font-family: Papyrus, Courier New;
+    font-weight: 400;
+}
+
+.menu {
+    font-size: medium;
+    font-weight: 300;
+    font-style: bold;
+    padding-bottom: 4px;
+    font-style: none;
+    padding-bottom: 20px;
+    height: 25px;
+    justify-content: center;
+}
+
+.welcome {
+    font-size: 16px;
+    color: #4F74D4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 0px;
+}
+
+.greeting {
+    font-size: 36px;
+    color: #0E2472;
+    font-family: imprima, Arial;
+    padding-bottom: 20px;
+}
+
+.txt1 {
+    color: black;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.designer {
+    color: #B87A02;
+}
+
+/* Middle */
+.middle {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    display: inline;
+}
+
+.projects {
+    width: 150px;
+    height: 24px;
+    margin-top: -30px;
+    margin-left: 150px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.image img {
+    border-radius: 0px 0px 0px 120px;
+    height: 318px;
+    width: 305px;
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 5px #ccc;
+    padding-top: -20px;
+}
+
+.hire {
+    width: 90px;
+    height: 24px;
+    background-color: #1310B1;
+    margin-top: 20px;
+}
+
+.projects {
+    font-weight: 600;
+    font-size: 15px;
+    font-style: bold;
+    padding-left: 0px;
+}
+
+/* Middle2 */
+.middle2 {
+    display: flex;
+}
+
+.one {
+}
+
+.two {
+    margin-left: 200px;
+}
+
+.three {
+    margin-left: 500px;
+}
+
+.num {
+    color: #252386;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.description {
+    padding-top: 0px;
+    font-size: 14px;
+}
+
+/* Footer */
+.foot {
+    display: flex;
+    padding-top: 50px;
+    align-self: center;
+}
+
+.foot img {
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 5px #ccc;
+    border-radius: 0px 0px 150px 150px;
+    margin-left: 40px;
+    height: 271px;
+    width: 260px;
+}
+
+.up {
+    color: #5D0CC5;
+    font-size: 32px;
+}
+
+.me {
+    color: #AA2828;
+}
+
+.txt {
+    padding-left: 70px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    body {
+        
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-left: 0;
+        text-align: center;
+       
+    }
+
+    .middle,
+    .middle2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        border-radius: 0;
+        margin-top: 20px;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+}
