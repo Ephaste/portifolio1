@@ -8,8 +8,9 @@
 </head>
 <body>
     <span class="head"><div class="logo"><h3>Logo</h3></div><div class="menu">
-        <a href="index.html">Home</a>  &nbsp; &nbsp; &nbsp;<a href="adress.html">Adress</a>&nbsp; &nbsp; &nbsp;<a href="projects.html">
-            Projects</a>&nbsp; &nbsp; &nbsp;<a href="contact.html">Contact me</a></div></span>
+        <a href="index.html">Home</a>  &nbsp; &nbsp; &nbsp;<a href="adress.html">Adress
+ </a>&nbsp; &nbsp; &nbsp;<a href="projects.html">Projects</a>&nbsp; &nbsp; &nbsp;<a href="contact.html">Contact me</a> 
+ &nbsp; &nbsp; &nbsp;<a href="about.html">About</a></div></span>
    <h1 class="tittle">CONTACT ME!</h1> <h3 class="kwibaraguza">If you want to hire me or give a remark, please don't hesitate your self  write for me!</h3>
 <div class="content">
     <div class="one">
@@ -31,7 +32,8 @@
         </table>
     </div>
     <div class="two">
-        
+        <form action="mailto:ephasteniyonizeye@gmail.com ? Bcc=xyz@gmail.com">
+            
         <table>
             <tr>
                 <td class="input"><label>Fname:</label> <br> <input type="text" id="fname"></td>
@@ -42,18 +44,28 @@
                 <td class="input"><label>Phone:</label> <br> <input type="text" id="phone_num"></td>
         </tr>
         </table>
-        <h3 class="subject">Select the subject</h3>
-        <div id="subject"> 
-            <input type="radio">  Web development&nbsp; &nbsp;
-            <input type="radio">  Web development&nbsp; &nbsp;
-            <input type="radio">  Web development&nbsp; &nbsp;
+        <h3 class="subject">Write for me</h3>
+        <div id="text"> 
+            <textarea id="message"  rows="4" cols="50" placeholder="Write me something"></textarea>
+           
+           
         </div>
-        <p class="send"><button class="send">SEND MESSSAGE</button>
+        <p class="send"><input type="submit" id="send" value="SEND MESSSAGE" onclick="sendMail();">
         </p>
         
     
     </div>
+</form>
     <script>
+        function sendMail() {
+    var link = "mailto:ephasteniyonizeye@gmail.com"
+             + "?cc=CCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('message').value)
+    ;
+
+    window.location.href = link;
+}
 
     function ValidateEmail(email) {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {

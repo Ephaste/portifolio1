@@ -1,0 +1,73 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.logo {
+    font-family: Papyrus, Courier New;
+    font-weight: 400;
+}
+
+.menu {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: medium;
+    font-weight: 300;
+    font-style: bold;
+    padding-bottom: 4px;
+    font-style: none;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.tittle {
+    font-size: 32px; /* Decrease font size for smaller screens */
+    color: #0E2472;
+    font-family: imprima, Arial;
+    padding-bottom: 10px; /* Decrease padding for smaller screens */
+}
+
+.me {
+    color: #AA2828;
+}
+
+.writting {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .menu {
+        margin-left: 10px;
+    }
+
+    .tittle {
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+
+    .writting {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}

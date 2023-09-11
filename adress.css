@@ -7,7 +7,7 @@ body {
     width: 100%;
     max-width: 1400px;
     height: 680px;
-    background-color: #232121;
+    background-color: rgb(7, 7, 70);
     display: flex;
     justify-content: center;
     align-items: center;

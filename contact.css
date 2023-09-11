@@ -1,4 +1,6 @@
-
+body {
+  background-color: #F5F5F5;
+}
 .head{
     
     display: flex;
@@ -49,13 +51,15 @@ a:link {
   }
   .content{
 display: flex;
-border: solid 2px gray
+
+border-radius: 20px;
   }
   /* =========DIV ONE================ */
   .one{
+    border-radius: 20px;
     width: 800px;
     height: 500px;
-    background-color: #362A30;
+    background-color:  rgb(7, 7, 70);
   }
   
   #title{
@@ -100,9 +104,9 @@ border: solid 2px gray
   .two{
     width: 800px;
     height: 500px;
+    border-radius: 20px;
+    border: solid 2px gray;
     
-   
-   
   }
    image{
     opacity: 0.2;
@@ -124,8 +128,10 @@ border: solid 2px gray
     font-weight: 1000;
    
   }
-  #subject{
-padding-left: 80px;
+  #text{
+
+justify-content: center;
+display: flex;
   }
   .send{
    
@@ -136,8 +142,8 @@ padding-left: 80px;
 
    
   }
-  button{
-    background-color: #362A30;
+  #send{
+    background-color:  rgb(7, 7, 70);
     color: #ffffff;
     height: 40px;
     width: 200px;

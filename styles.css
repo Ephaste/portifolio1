@@ -2,10 +2,12 @@
 body {
     margin: auto;
     background-color: white;
-    margin-right: 120px;
-    margin-left: 300px;
+    margin-right: 50px;
+    margin-left: 30px;
     background-color: hsl(0, 0%, 100%);
     margin-top: 100px;
+    background-color: #F5F5F5;
+      
 }
 
 /* Unvisited link */
@@ -49,17 +51,18 @@ a:active {
     padding-bottom: 20px;
     height: 25px;
     justify-content: center;
+    display: flex;
 }
 
 .welcome {
-    font-size: 16px;
+    font-size: 24px;
     color: #4F74D4;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 0px;
 }
 
 .greeting {
-    font-size: 36px;
+    font-size: 42px;
     color: #0E2472;
     font-family: imprima, Arial;
     padding-bottom: 20px;
@@ -67,7 +70,7 @@ a:active {
 
 .txt1 {
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -95,23 +98,32 @@ a:active {
 
 .image img {
     border-radius: 0px 0px 0px 120px;
-    height: 318px;
-    width: 305px;
+    height: 400px;
+    width: 350px;
     border: 2px solid #fff;
     box-shadow: 10px 10px 5px #ccc;
     padding-top: -20px;
 }
+.image{
+    padding-top:0px ;
+    padding-left: 20px;
+}
+.buttons{
+    display: inline;
+    padding-right: 100px;
+}
 
 .hire {
-    width: 90px;
-    height: 24px;
+    width: 120px;
+    height: 30px;
     background-color: #1310B1;
     margin-top: 20px;
+   
 }
 
 .projects {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     font-style: bold;
     padding-left: 0px;
 }
@@ -125,11 +137,11 @@ a:active {
 }
 
 .two {
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 .three {
-    margin-left: 500px;
+    margin-left: 600px;
 }
 
 .num {
@@ -155,13 +167,13 @@ a:active {
     box-shadow: 10px 10px 5px #ccc;
     border-radius: 0px 0px 150px 150px;
     margin-left: 40px;
-    height: 271px;
-    width: 260px;
+    height: 350px;
+    width: 300px;
 }
 
 .up {
     color: #5D0CC5;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .me {
@@ -170,6 +182,9 @@ a:active {
 
 .txt {
     padding-left: 70px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
 }
 
 /* Media Query for Responsive Design */
